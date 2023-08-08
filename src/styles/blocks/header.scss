@@ -1,0 +1,107 @@
+.header {
+  height: 100vh;
+
+  &__content {
+    text-align: center;
+
+    @include onTablet {
+      @include grid;
+    }
+
+    @include onDesktop {
+      text-align: left;
+    }
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    grid-column: 1 / -1;
+
+    @include onTablet {
+      margin-bottom: 30px;
+    }
+
+    @include onDesktop {
+      @include grid;
+      margin-bottom: 80px;
+    }
+  }
+
+  &__logo-icon {
+    grid-column: 1 / 4;
+  }
+
+  &__shop-icon {
+    grid-column: -1;
+  }
+
+  &__navbar {
+    display: none;
+
+    @include onDesktop {
+      display: block;
+      grid-column: 7 / 10;
+    }
+  }
+
+  &__navlist {
+    display: flex;
+    color: $c-primary;
+    gap: 40px;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 24px;
+    grid-column: 1 / -1;
+
+    @include onTablet {
+      margin: 0 0 50px;
+    }
+
+    @include onDesktop {
+      margin: 0;
+      grid-row: 2 / 5;
+      grid-column: 7 / -1;
+    }
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    grid-column: 2 / -2;
+
+    @include onDesktop {
+      margin-bottom: 30px;
+      grid-row: 2 / 3;
+      grid-column: 2 / 7;
+    }
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+    grid-column: 2 / -2;
+
+    @include onDesktop {
+      margin-bottom: 50px;
+      grid-row: 3 / 4;
+      grid-column: 2 / 6;
+    }
+  }
+
+  &__button {
+    margin: 0 auto;
+    grid-column: 2 / -2;
+
+    @include onDesktop {
+      grid-row: 4 / 5;
+      grid-column: 2 / 5;
+    }
+  }
+}

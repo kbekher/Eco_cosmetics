@@ -1,0 +1,46 @@
+.icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+
+  transition: $transition;
+
+  &--menu {
+    @include onDesktop {
+      display: none;
+    }
+  }
+
+  &--logo {
+    @include onDesktop {
+      width: max-content;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+  }
+
+  &__img--logo {
+    @include onDesktop {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  &__text {
+    display: none;
+
+    @include onDesktop {
+      display: block;
+      font-weight: 400;
+      line-height: 130%;
+      letter-spacing: 0.7px;
+      text-transform: uppercase;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

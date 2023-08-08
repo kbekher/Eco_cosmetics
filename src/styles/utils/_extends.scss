@@ -1,4 +1,46 @@
-%h1 {
-  font-family: "Roboto", sans-serif;
+// %text {
+//   font-weight: 400;
+//   font-size: 18px;
+//   line-height: 150%;
+//   letter-spacing: 5%;
+// }
+
+// %text2 {
+//   font-weight: 400;
+//   font-size: 14px;
+//   line-height: 130%;
+//   letter-spacing: 5%;
+// }
+
+// %text3 {
+//   font-weight: 500;
+//   font-size: 18px;
+//   line-height: 130%;
+//   letter-spacing: 5%;
+// }
+
+%small-text {
   font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+%menu-text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+%decorative-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+}
+
+%button {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 15%;
+  text-transform: uppercase;
 }

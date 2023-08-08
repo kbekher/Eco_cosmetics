@@ -1,0 +1,19 @@
+.navbar {
+  &__list {
+    @extend %menu-text;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__item {
+    width: 100%;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid $c-background;
+
+    @include onTablet {
+      margin-bottom: 50px;
+    }
+  }
+}

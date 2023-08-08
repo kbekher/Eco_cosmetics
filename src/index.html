@@ -1,13 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html
+  lang="en"
+  class="page"
+  id="homepage"
+>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Witch Of Mountain Winds</title>
+    <link
+      rel="shortcut icon"
+      href="./images/logo.svg"
+      type="image/x-icon"
+    >
     <link rel="stylesheet" href="./styles/main.scss">
+    <script
+      type="text/javascript"
+      src="scripts/main.js"
+      defer
+    ></script>
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+
+  <body class="page__body">
+    <header class="page__header header">
+      <div class="container">
+        <div class="header__content">
+          <div class="header__top">
+            <a href="#menu" class="icon icon--menu">
+              <img src="./images/menu.svg" alt="menu icon">
+            </a>
+
+            <a
+              href="#homepage"
+              class="header__logo-icon icon icon--logo"
+            >
+              <img
+                src="./images/logo.svg"
+                alt="logo icon"
+                class="icon__img icon__img--logo"
+              >
+              <span class="icon__text">Witch Of Mountain Winds</span>
+            </a>
+
+            <nav class="header__navbar">
+              <ul class="header__navlist">
+                <li class="header__navitem">
+                  <a href="#shop" class="header__navlink">Shop</a>
+                </li>
+                <li class="header__navitem">
+                  <a href="#contact" class="header__navlink">Contact</a>
+                </li>
+                <li cclass="header__navitem">
+                  <a href="#about-brand" class="header__navlink">About</a>
+                </li>
+              </ul>
+            </nav>
+
+            <a href="/" class="header__shop-icon icon">
+              <img src="./images//shop.svg" alt="shop icon">
+            </a>
+          </div>
+
+          <img
+            src="./images/bg-header.jpg"
+            alt="product image"
+            class="header__image"
+          >
+
+          <h1 class="header__title">Brand of eco-cosmetics and magic candles</h1>
+          <p class="header__subtitle">20% of sales at a wild bird shelter</p>
+          <a href="/" class="header__button button">Shop</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="page__menu menu" id="menu">
+      <div class="container">
+        <div class="menu__top">
+          <a href="#homepage" class="icon">
+            <img src="./images/close.svg" alt="close icon">
+          </a>
+        </div>
+        <nav class="navbar">
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a href="#shop" class="navbar__link">Shop</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#contact" class="navbar__link">Contact</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#about-brand" class="navbar__link">About</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <main>
+      <section class="headline"></section>
+      <section class="about-brand"></section>
+      <section class="shop" id="#shop"></section>
+      <section class="about-creators"></section>
+      <section class="about-product"></section>
+      <section class="contact" id="#contact"></section>
+    </main>
+
+    <footer></footer>
   </body>
+
 </html>
