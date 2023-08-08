@@ -2,6 +2,7 @@
   background-color: $c-dark;
   color: $c-background;
   height: 100vh;
+  z-index: 1;
 
   &__top {
     margin: 20px 0 44px;

@@ -1,0 +1,61 @@
+.headline {
+  position: relative;
+
+  &__content {
+    @include onDesktop {
+      @include grid;
+
+      &::before {
+        content: '';
+        width: 46%;
+        height: 1px;
+        background-color: $c-primary;
+        opacity: 50%;
+        position: absolute;
+        left: 0;
+      }
+
+      &::after {
+        content: '';
+        width: 50%;
+        height: 1px;
+        background-color: $c-primary;
+        opacity: 50%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+
+  &__title {
+    width: 280px;
+    color: $c-primary;
+
+    @include onTablet {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    @include onDesktop {
+      margin: 100px 0;
+      width: 100%;
+      text-align: left;
+      grid-row: 1/ 2;
+      grid-column: 7 / 11;
+    }
+
+  }
+
+  &__paragpaph {
+    display: none;
+
+    @include onDesktop {
+      margin: 100px 0;
+      display: block;
+      grid-row: 1/ 2;
+      grid-column: 2 / 6;
+    }
+  }
+}

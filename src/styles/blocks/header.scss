@@ -1,6 +1,4 @@
 .header {
-  height: 100vh;
-
   &__content {
     text-align: center;
 
@@ -54,8 +52,9 @@
   }
 
   &__image {
+    object-fit: cover;
     width: 100%;
-    height: auto;
+    max-height: 500px;
     margin-left: -20px;
     margin-right: -20px;
     margin-bottom: 24px;
